@@ -1,0 +1,43 @@
+.accordion {
+  position: absolute;
+  width: 90%;
+  top: 15%;
+  left: 5%;
+}
+
+.head-quiz {
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  /* font-family: "IBM Plex Sans Thai Looped"; */
+  /* font-weight: 700; */
+}
+.description-quiz {
+  position: absolute;
+  width: 80%;
+  top: 22%;
+  left: 10%;
+  /* font-family: "IBM Plex Sans Thai Looped"; */
+  /* font-weight: 700; */
+}
+.description-quiz-p {
+  position: absolute;
+  width: 80%;
+  top: 36%;
+  left: 10%;
+  /* font-family: "IBM Plex Sans Thai Looped"; */
+  /* font-weight: 700; */
+}
+
+.start-quiz {
+  position: absolute;
+  left: 41%;
+  top: 50%;
+  width: 20%;
+}
+
+.form {
+  position: absolute;
+  left: 25%;
+  top: 60%;
+}

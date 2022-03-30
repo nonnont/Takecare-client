@@ -1,0 +1,376 @@
+{/* โรคซึมเศร้า 9 คำถาม */}
+        {/* 6 */}
+        {["radio"].map((type) => (
+          <div key={`inline-${type}`} className="redio">
+            <h5 className="verse">เบื่อ ไม่สนใจอยากทำอะไร ?</h5>
+            <Form.Check
+              inline
+              label="1"
+              name="group6"
+              type={type}
+              value="1"
+              onChange={(e) => setCount6(0)}
+            />
+            <Form.Check
+              inline
+              label="2"
+              name="group6"
+              type={type}
+              value="2"
+              onChange={(e) => setCount6(1)}
+            />
+            <Form.Check
+              inline
+              label="3"
+              name="group6"
+              type={type}
+              value="3"
+              onChange={(e) => setCount6(2)}
+            />
+            <Form.Check
+              inline
+              label="4"
+              name="group6"
+              type={type}
+              value="4"
+              onChange={(e) => setCount6(3)}
+            />
+          </div>
+        ))}
+        <hr />
+        <br />
+
+        {/* 7 */}
+        {["radio"].map((type) => (
+          <div key={`inline-${type}`} className="redio">
+            <h5 className="verse">ไม่สบายใจ ซึมเศร้า ท้อแท้ ?</h5>
+            <Form.Check
+              inline
+              label="1"
+              name="group7"
+              type={type}
+              value="1"
+              onChange={(e) => setCount7(0)}
+            />
+            <Form.Check
+              inline
+              label="2"
+              name="group7"
+              type={type}
+              value="2"
+              onChange={(e) => setCount7(1)}
+            />
+            <Form.Check
+              inline
+              label="3"
+              name="group7"
+              type={type}
+              value="3"
+              onChange={(e) => setCount7(2)}
+            />
+            <Form.Check
+              inline
+              label="4"
+              name="group7"
+              type={type}
+              value="4"
+              onChange={(e) => setCount7(3)}
+            />
+          </div>
+        ))}
+        <hr />
+        <br />
+
+        {/* 8 */}
+        {["radio"].map((type) => (
+          <div key={`inline-${type}`} className="redio">
+            <h5 className="verse">หลับยาก หรือหลับๆ ตื่นๆ หรือ หลับมากไป ?</h5>
+            <Form.Check
+              inline
+              label="1"
+              name="group8"
+              type={type}
+              value="1"
+              onChange={(e) => setCount8(0)}
+            />
+            <Form.Check
+              inline
+              label="2"
+              name="group8"
+              type={type}
+              value="2"
+              onChange={(e) => setCount8(1)}
+            />
+            <Form.Check
+              inline
+              label="3"
+              name="group8"
+              type={type}
+              value="3"
+              onChange={(e) => setCount8(2)}
+            />
+            <Form.Check
+              inline
+              label="4"
+              name="group8"
+              type={type}
+              value="4"
+              onChange={(e) => setCount8(3)}
+            />
+          </div>
+        ))}
+        <hr />
+        <br />
+
+        {/* 9 */}
+        {["radio"].map((type) => (
+          <div key={`inline-${type}`} className="redio">
+            <h5 className="verse">เหนื่อยง่ายหรือไม่ค่อยมีแรง ?</h5>
+            <Form.Check
+              inline
+              label="1"
+              name="group9"
+              type={type}
+              value="1"
+              onChange={(e) => setCount9(0)}
+            />
+            <Form.Check
+              inline
+              label="2"
+              name="group9"
+              type={type}
+              value="2"
+              onChange={(e) => setCount9(1)}
+            />
+            <Form.Check
+              inline
+              label="3"
+              name="group9"
+              type={type}
+              value="3"
+              onChange={(e) => setCount9(2)}
+            />
+            <Form.Check
+              inline
+              label="4"
+              name="group9"
+              type={type}
+              value="4"
+              onChange={(e) => setCount9(3)}
+            />
+          </div>
+        ))}
+        <hr />
+        <br />
+
+        {/* 10 */}
+        {["radio"].map((type) => (
+          <div key={`inline-${type}`} className="redio">
+            <h5 className="verse">เบื่ออาหารหรือกินมากเกินไป ?</h5>
+            <Form.Check
+              inline
+              label="1"
+              name="group10"
+              type={type}
+              value="1"
+              onChange={(e) => setCount10(0)}
+            />
+            <Form.Check
+              inline
+              label="2"
+              name="group10"
+              type={type}
+              value="2"
+              onChange={(e) => setCount10(1)}
+            />
+            <Form.Check
+              inline
+              label="3"
+              name="group10"
+              type={type}
+              value="3"
+              onChange={(e) => setCount10(2)}
+            />
+            <Form.Check
+              inline
+              label="4"
+              name="group10"
+              type={type}
+              value="4"
+              onChange={(e) => setCount10(3)}
+            />
+          </div>
+        ))}
+        <hr />
+        <br />
+
+        {/* 11 */}
+        {["radio"].map((type) => (
+          <div key={`inline-${type}`} className="redio">
+            <h5 className="verse">
+              รู้สึกไม่ดีกับตัวเอง คิดว่าตัวเองล้มเหลวหรือครอบครัวผิดหวัง ?
+            </h5>
+            <Form.Check
+              inline
+              label="1"
+              name="group11"
+              type={type}
+              value="1"
+              onChange={(e) => setCount11(0)}
+            />
+            <Form.Check
+              inline
+              label="2"
+              name="group11"
+              type={type}
+              value="2"
+              onChange={(e) => setCount11(1)}
+            />
+            <Form.Check
+              inline
+              label="3"
+              name="group11"
+              type={type}
+              value="3"
+              onChange={(e) => setCount11(2)}
+            />
+            <Form.Check
+              inline
+              label="4"
+              name="group11"
+              type={type}
+              value="4"
+              onChange={(e) => setCount11(3)}
+            />
+          </div>
+        ))}
+        <hr />
+        <br />
+
+        {/* 12 */}
+        {["radio"].map((type) => (
+          <div key={`inline-${type}`} className="redio">
+            <h5 className="verse">
+              สมาธิไม่ดี เวลาทำอะไร เช่น ดูโทรทัศน์ ฟังวิทยุ
+              หรือทำงานที่ต้องใช้ความตั้งใจ ?
+            </h5>
+            <Form.Check
+              inline
+              label="1"
+              name="group12"
+              type={type}
+              value="1"
+              onChange={(e) => setCount12(0)}
+            />
+            <Form.Check
+              inline
+              label="2"
+              name="group12"
+              type={type}
+              value="2"
+              onChange={(e) => setCount12(1)}
+            />
+            <Form.Check
+              inline
+              label="3"
+              name="group12"
+              type={type}
+              value="3"
+              onChange={(e) => setCount12(2)}
+            />
+            <Form.Check
+              inline
+              label="4"
+              name="group12"
+              type={type}
+              value="4"
+              onChange={(e) => setCount12(3)}
+            />
+          </div>
+        ))}
+        <hr />
+        <br />
+
+        {/* 13 */}
+        {["radio"].map((type) => (
+          <div key={`inline-${type}`} className="redio">
+            <h5 className="verse">
+              พูดช้า ทำอะไรช้าลงจนคนอื่นสังเกตเห็นได้ <br />
+              หรือกระสับกระส่ายไม่สามารถอยู่นิ่งได้เหมือนที่เคยเป็น ?
+            </h5>
+            <Form.Check
+              inline
+              label="1"
+              name="group13"
+              type={type}
+              value="1"
+              onChange={(e) => setCount13(0)}
+            />
+            <Form.Check
+              inline
+              label="2"
+              name="group13"
+              type={type}
+              value="2"
+              onChange={(e) => setCount13(1)}
+            />
+            <Form.Check
+              inline
+              label="3"
+              name="group13"
+              type={type}
+              value="3"
+              onChange={(e) => setCount13(2)}
+            />
+            <Form.Check
+              inline
+              label="4"
+              name="group13"
+              type={type}
+              value="4"
+              onChange={(e) => setCount13(3)}
+            />
+          </div>
+        ))}
+        <hr />
+        <br />
+
+        {/* 14 */}
+        {["radio"].map((type) => (
+          <div key={`inline-${type}`} className="redio">
+            <h5 className="verse">คิดทำร้ายตนเอง หรือคิดว่าถ้าตายไปคงจะดี ?</h5>
+            <Form.Check
+              inline
+              label="1"
+              name="group14"
+              type={type}
+              value="1"
+              onChange={(e) => setCount14(0)}
+            />
+            <Form.Check
+              inline
+              label="2"
+              name="group14"
+              type={type}
+              value="2"
+              onChange={(e) => setCount14(1)}
+            />
+            <Form.Check
+              inline
+              label="3"
+              name="group14"
+              type={type}
+              value="3"
+              onChange={(e) => setCount14(2)}
+            />
+            <Form.Check
+              inline
+              label="4"
+              name="group14"
+              type={type}
+              value="4"
+              onChange={(e) => setCount14(3)}
+            />
+          </div>
+        ))}
+        <hr />

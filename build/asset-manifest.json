@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/static/css/main.53905029.chunk.css",
+    "main.js": "/static/js/main.681c4ab6.chunk.js",
+    "main.js.map": "/static/js/main.681c4ab6.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.776c1e0d.js",
+    "runtime-main.js.map": "/static/js/runtime-main.776c1e0d.js.map",
+    "static/css/2.6b1ef72f.chunk.css": "/static/css/2.6b1ef72f.chunk.css",
+    "static/js/2.081ae357.chunk.js": "/static/js/2.081ae357.chunk.js",
+    "static/js/2.081ae357.chunk.js.map": "/static/js/2.081ae357.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.6b1ef72f.chunk.css.map": "/static/css/2.6b1ef72f.chunk.css.map",
+    "static/css/main.53905029.chunk.css.map": "/static/css/main.53905029.chunk.css.map",
+    "static/js/2.081ae357.chunk.js.LICENSE.txt": "/static/js/2.081ae357.chunk.js.LICENSE.txt",
+    "static/media/activity-eat.331227cc.jpg": "/static/media/activity-eat.331227cc.jpg",
+    "static/media/activity-massage.fb908dfd.jpg": "/static/media/activity-massage.fb908dfd.jpg",
+    "static/media/activity-massage1.2c9c506c.JPG": "/static/media/activity-massage1.2c9c506c.JPG",
+    "static/media/activity-massage2.14fdb0cd.JPG": "/static/media/activity-massage2.14fdb0cd.JPG",
+    "static/media/activity-massage3.3f4fe4af.JPG": "/static/media/activity-massage3.3f4fe4af.JPG",
+    "static/media/activity-massage4.cf874686.JPG": "/static/media/activity-massage4.cf874686.JPG",
+    "static/media/activity-massage5.591a5231.JPG": "/static/media/activity-massage5.591a5231.JPG",
+    "static/media/activity-massage6.f378fad8.JPG": "/static/media/activity-massage6.f378fad8.JPG",
+    "static/media/activity-massage7.9e18b54a.JPG": "/static/media/activity-massage7.9e18b54a.JPG",
+    "static/media/activity-meditate.1ed74d3c.jpg": "/static/media/activity-meditate.1ed74d3c.jpg",
+    "static/media/activity-notebook.22e6ad17.jpg": "/static/media/activity-notebook.22e6ad17.jpg",
+    "static/media/audio.5ac4f5fb.mp3": "/static/media/audio.5ac4f5fb.mp3",
+    "static/media/Login.css": "/static/media/bg.5f5c9b69.png",
+    "static/media/index.ff4553a9.png": "/static/media/index.ff4553a9.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.776c1e0d.js",
+    "static/css/2.6b1ef72f.chunk.css",
+    "static/js/2.081ae357.chunk.js",
+    "static/css/main.53905029.chunk.css",
+    "static/js/main.681c4ab6.chunk.js"
+  ]
+}
