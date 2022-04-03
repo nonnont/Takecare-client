@@ -15,6 +15,8 @@ import { updateIdcall } from "../../../Functions/psychologist";
 // redux
 import { useSelector } from "react-redux";
 
+import { Form, FloatingLabel } from "react-bootstrap";
+
 const useStyles = makeStyles((theme) => ({
   appBar: {
     borderRadius: 15,
@@ -47,6 +49,13 @@ const Call = () => {
   const [item, setItem] = useState(null);
   const location = useLocation();
   const classes = useStyles();
+
+  const [datail, setDatail] = useState("");
+
+  const handleChange = (e) => {
+    setDatail(e.target.value);
+  };
+  console.log(datail);
 
   const { me, call, answerCall, callAccepted } = useContext(SocketContext);
 
@@ -93,13 +102,28 @@ const Call = () => {
       {item != null ? <VideoPlayer item={item} data={data} /> : null}
       {/* <VideoPlayer /> */}
       {id != null ? (
-        <Sidebar id={id} data={data}>
+        <Sidebar id={id} data={data} datail={datail}>
           {/* <h5>รหัสโค้ด : {id}</h5>
           <Notifications /> */}
         </Sidebar>
       ) : null}
 
       {call.isReceivingCall && !callAccepted ? answerCall() : null}
+
+      <Form.Group className="mb-3" controlId="formEducation">
+        <Form.Label>
+          <b>รายละเอียดในการคุย</b>
+        </Form.Label>
+        <FloatingLabel controlId="floatingTextarea2" label="กรอกรายละเอียด">
+          <Form.Control
+            onChange={handleChange}
+            name="education"
+            as="textarea"
+            placeholder="Leave a comment here"
+            style={{ height: "200px", width: "600px" }}
+          />
+        </FloatingLabel>
+      </Form.Group>
     </div>
   );
 };

@@ -67,7 +67,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const Sidebar = ({ children, id, data }) => {
+const Sidebar = ({ children, id, data, datail }) => {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -78,15 +78,17 @@ const Sidebar = ({ children, id, data }) => {
   const [i, setI] = useState(true);
   const classes = useStyles();
 
-  const [datail, setDatail] = useState("");
+  // const [datail, setDatail] = useState("");
 
-  const handleChange = (e) => {
-    setDatail(e.target.value);
-  };
+  // const handleChange = (e) => {
+  //   setDatail(e.target.value);
+  // };
   console.log(datail);
 
   const leaveCalls = (data) => {
-    handleOpen();
+    // handleOpen();
+    addhistory(data);
+
     leaveCall(data);
   };
 
@@ -162,16 +164,18 @@ const Sidebar = ({ children, id, data }) => {
               fullWidth
             /> */}
               {callAccepted && !callEnded ? (
-                <Button
-                  variant="contained"
-                  color="secondary"
-                  startIcon={<PhoneDisabled fontSize="large" />}
-                  fullWidth
-                  onClick={() => leaveCalls(data)}
-                  className={classes.margin}
-                >
-                  วางสาย
-                </Button>
+                <Link to="/psychologist/index">
+                  <Button
+                    variant="contained"
+                    color="secondary"
+                    startIcon={<PhoneDisabled fontSize="large" />}
+                    fullWidth
+                    onClick={() => leaveCalls(data)}
+                    className={classes.margin}
+                  >
+                    วางสาย
+                  </Button>
+                </Link>
               ) : (
                 <Button
                   variant="contained"
@@ -191,7 +195,7 @@ const Sidebar = ({ children, id, data }) => {
           {children}
         </Paper>
       </Container>
-      <div>
+      {/* <div>
         <Modal
           open={open}
           onClose={handleClose}
@@ -227,7 +231,7 @@ const Sidebar = ({ children, id, data }) => {
             </Typography>
           </Box>
         </Modal>
-      </div>
+      </div> */}
     </>
   );
 };

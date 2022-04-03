@@ -14,6 +14,10 @@ import { makeStyles } from "@material-ui/core/styles";
 
 import { SocketContext } from "../../../../../Context";
 
+const endCall = {
+  width: "100%",
+};
+
 const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",

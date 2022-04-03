@@ -99,7 +99,7 @@ const Call = () => {
           <Notifications /> */}
         </Sidebar>
       ) : null}
-
+      {console.log("me 2", id)}
       {call.isReceivingCall && !callAccepted ? answerCall() : null}
     </div>
   );

@@ -7,6 +7,30 @@ import { getHistoryCall, getCancelCall } from "../../../Functions/users";
 // redux
 import { useSelector } from "react-redux";
 
+import Chart from "./Chart";
+
+import {
+  Chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend,
+} from "chart.js";
+import { Line } from "react-chartjs-2";
+
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend
+);
+
 function Home() {
   const [history, setHistory] = useState([]);
   const [cancelcall, setCancelcall] = useState([]);
@@ -48,11 +72,25 @@ function Home() {
             <br />
             <br />
             <br />
+            <h4>กราฟแสดงคะแนนความเครียด</h4>
+            <p>หมายเหตุ: แกน X แทนวันเวลา | แกน Y แทนระดับคะแนนความเครียด</p>
+            <p>
+              <u>เกณฑ์การกำหนดคะแนนความเครียด</u>
+            </p>
+
+            <ul>
+              <li>คะแนน 0-4 เครียดน้อย หรือไม่เครียดเลย</li>
+              <li>คะแนน 5-7 เครียดปานกลาง</li>
+              <li>คะแนน 8-9 เครียดมาก</li>
+              <li>คะแนน 10-15 เครียดมากที่สุด</li>
+            </ul>
+            <br />
+            <p>แหล่งอ้างอิง: กรมสุขภาพจิต กระทรวงสาธารณสุข</p>
+            <Chart />
             <br />
             <br />
             <h4>ประวัติการนัด</h4>
             <br />
-
             <Table striped bordered hover>
               <thead>
                 <tr>

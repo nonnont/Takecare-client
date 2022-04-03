@@ -159,10 +159,34 @@ export const getCancelCall = async (authtoken, email) => {
   );
 };
 
-export const postAverageScore = async (authtoken, value) => {
+export const postAverageScore = async (
+  authtoken,
+  email,
+  score_stress,
+  score2
+) => {
+  console.log("tttt", email, score_stress, score2);
   return await axios.post(
-    process.env.REACT_APP_API + "/users/activity/averagescore/postAverageScore",
-    value,
+    process.env.REACT_APP_API +
+      "/users/activity/averagescore/postAverageScore/" +
+      email +
+      "/" +
+      score_stress +
+      "/" +
+      score2,
+    {
+      Headers: {
+        authtoken,
+      },
+    }
+  );
+};
+
+export const getAverageScore = async (authtoken, email) => {
+  return await axios.get(
+    process.env.REACT_APP_API +
+      "/user/activity/averagescore/getaveragescore/" +
+      email,
     {
       Headers: {
         authtoken,
